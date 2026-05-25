@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}About Us{% endblock title %}
+
+{% block extra_css %}
+<style>
+  .hero {
+    align-items: flex-start;
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+  .hero img {
+    min-height: 100%;
+    height: 100%;
+  }
+</style>
+{% endblock extra_css %}
+
+{% block content %}
+<div class="container py-4" data-aos="fade-up" data-aos-delay="100">
+  <h1 class="display-4 fw-bold text-white mb-2">About Us</h1>
+  <p class="lead text-white-50 mb-4">Kina — Crafted with Creativity, Made with Heart.</p>
+
+  <div class="row justify-content-center">
+    <div class="col-lg-10 col-xl-9">
+      <div class="card border-0 shadow-lg bg-dark bg-opacity-75 text-white">
+        <div class="card-body p-4 p-md-5">
+          <p class="mb-4">
+            Welcome to <strong>Kina</strong> — a place where creativity, tradition, and handmade artistry come together.
+            We believe every handcrafted product tells a unique story. Our mission is to support talented artisans and
+            bring beautiful handmade creations to people who value originality, quality, and culture.
+          </p>
+          <p class="mb-4">
+            We started Kina with a simple idea: create an online platform where handcrafted products receive the
+            appreciation they deserve. In a world of mass-produced items, we promote authentic work that reflects
+            creativity and a personal touch.
+          </p>
+
+          <h5 class="text-uppercase text-warning mb-3">What we focus on</h5>
+          <div class="row g-3 g-md-4 mb-4">
+            <div class="col-sm-6">
+              <div class="d-flex align-items-start gap-3 p-3 rounded bg-white bg-opacity-10 h-100">
+                <i class="bi bi-gem fs-3 text-warning flex-shrink-0"></i>
+                <div>
+                  <h6 class="mb-1">Handcrafted quality</h6>
+                  <p class="small mb-0 text-white-50">Carefully designed decor, accessories, and gifts made with passion and attention to detail.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-start gap-3 p-3 rounded bg-white bg-opacity-10 h-100">
+                <i class="bi bi-palette fs-3 text-warning flex-shrink-0"></i>
+                <div>
+                  <h6 class="mb-1">Unique designs</h6>
+                  <p class="small mb-0 text-white-50">Original pieces you will not find in mass-market stores.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-start gap-3 p-3 rounded bg-white bg-opacity-10 h-100">
+                <i class="bi bi-shield-check fs-3 text-warning flex-shrink-0"></i>
+                <div>
+                  <h6 class="mb-1">Secure shopping</h6>
+                  <p class="small mb-0 text-white-50">Reliable service, secure payments, and a smooth buying experience.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="mb-0">
+            Customer satisfaction is our priority. Thank you for supporting handmade art and being part of the
+            <strong>Kina</strong> journey.
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="/" class="btn btn-outline-light btn-lg">
+          <i class="bi bi-house-door me-2"></i>Back to Home
+        </a>
+        <a href="/contact" class="btn btn-warning btn-lg ms-2">
+          <i class="bi bi-envelope me-2"></i>Contact Us
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
+
+{% block body %}
+{% endblock body %}
